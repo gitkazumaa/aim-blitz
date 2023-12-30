@@ -73,7 +73,7 @@ export const AccountMenu = ({ account }: AccountMenuParameters) => {
 				<List>
 					<ListItemButton
 						component={Link}
-						to={`/accounts/${account._id}`}
+						to={`/aim-blitz/accounts/${account._id}`}
 						onClick={handleClose}
 					>
 						<ListItemIcon>
@@ -83,7 +83,7 @@ export const AccountMenu = ({ account }: AccountMenuParameters) => {
 					</ListItemButton>
 					<ListItemButton
 						component={Link}
-						to={`/accounts/${account._id}/edit`}
+						to={`/aim-blitz/accounts/${account._id}/edit`}
 						onClick={handleClose}
 					>
 						<ListItemIcon>

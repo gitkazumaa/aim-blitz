@@ -96,7 +96,7 @@ export const Sidebar = () => {
 				<Stack width={"100%"} justifyContent="center" alignItems="center">
 					<ButtonBase
 						component={Link}
-						to="/"
+						to="/aim-blitz"
 						color={theme.palette.text.primary}
 						disableRipple
 					>
@@ -129,7 +129,7 @@ export const Sidebar = () => {
 					>
 						<ListItemButton
 							component={Link}
-							to="/"
+							to="/aim-blitz"
 							selected={location.pathname === "/"}
 						>
 							<ListItemIcon>
@@ -139,7 +139,7 @@ export const Sidebar = () => {
 						</ListItemButton>
 						<ListItemButton
 							component={Link}
-							to="/scenarios"
+							to="/aim-blitz/scenarios"
 							selected={location.pathname === "/scenarios"}
 						>
 							<ListItemIcon>
@@ -149,7 +149,7 @@ export const Sidebar = () => {
 						</ListItemButton>
 						<ListItemButton
 							component={Link}
-							to="/settings"
+							to="/aim-blitz/settings"
 							selected={location.pathname === "/settings"}
 						>
 							<ListItemIcon>
@@ -197,7 +197,7 @@ export const Sidebar = () => {
 						{!isLoading && getAccountResponse?.data?.account ? (
 							<AccountMenu account={getAccountResponse?.data.account} />
 						) : (
-							<ListItemButton component={Link} to="/sign-in">
+							<ListItemButton component={Link} to="/aim-blitz/sign-in">
 								<ListItemIcon sx={{ width: 24, height: 24 }}>
 									<LoginOutlinedIcon />
 								</ListItemIcon>

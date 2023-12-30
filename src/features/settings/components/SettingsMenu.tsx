@@ -35,19 +35,25 @@ export interface SettingsMenuProps {
 }
 
 const TEXTURES = [
-	{ value: "/textures/Bricks/Bricks.jpg", label: "Bricks" },
-	{ value: "/textures/Checkerboard/Checkerboard.jpg", label: "Checkerboard" },
+	{ value: "/aim-blitz/textures/Bricks/Bricks.jpg", label: "Bricks" },
 	{
-		value: "/textures/Cobblestone/Cobblestone.jpg",
+		value: "/aim-blitz/textures/Checkerboard/Checkerboard.jpg",
+		label: "Checkerboard",
+	},
+	{
+		value: "/aim-blitz/textures/Cobblestone/Cobblestone.jpg",
 		label: "Cobblestone",
 	},
-	{ value: "/textures/Concrete/Concrete.jpg", label: "Concrete" },
-	{ value: "/textures/Grid/Grid.jpg", label: "Grid" },
-	{ value: "/textures/Ground/Ground.jpg", label: "Ground" },
-	{ value: "/textures/Metal/Metal.jpg", label: "Metal" },
-	{ value: "/textures/Pure-Color/PureColor.jpg", label: "Pure Color" },
-	{ value: "/textures/Rock/Rock.jpg", label: "Rock" },
-	{ value: "/textures/Wood/Wood.jpg", label: "Wood" },
+	{ value: "/aim-blitz/textures/Concrete/Concrete.jpg", label: "Concrete" },
+	{ value: "/aim-blitz/textures/Grid/Grid.jpg", label: "Grid" },
+	{ value: "/aim-blitz/textures/Ground/Ground.jpg", label: "Ground" },
+	{ value: "/aim-blitz/textures/Metal/Metal.jpg", label: "Metal" },
+	{
+		value: "/aim-blitz/textures/Pure-Color/PureColor.jpg",
+		label: "Pure Color",
+	},
+	{ value: "/aim-blitz/textures/Rock/Rock.jpg", label: "Rock" },
+	{ value: "/aim-blitz/textures/Wood/Wood.jpg", label: "Wood" },
 ]
 
 export const SettingsMenu = ({

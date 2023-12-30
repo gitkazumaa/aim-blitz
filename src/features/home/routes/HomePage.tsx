@@ -15,15 +15,15 @@ import { useState, useEffect } from "react"
 export const HomePage = () => {
 	const theme = useTheme()
 	const scenarioImages = [
-		`/images/tilefrenzy-${theme.palette.mode}.gif`,
-		`/images/1wall5targets-${theme.palette.mode}.gif`,
+		`/aim-blitz/images/tilefrenzy-${theme.palette.mode}.gif`,
+		`/aim-blitz/images/1wall5targets-${theme.palette.mode}.gif`,
 	]
 
 	const customizationImages = [
-		"/images/customizable1.PNG",
-		"/images/customizable2.PNG",
-		"/images/customizable3.PNG",
-		"/images/customizable4.PNG",
+		"/aim-blitz/images/customizable1.PNG",
+		"/aim-blitz/images/customizable2.PNG",
+		"/aim-blitz/images/customizable3.PNG",
+		"/aim-blitz/images/customizable4.PNG",
 	]
 
 	const [currentScenarioImageIndex, setCurrentScenarioImageIndex] = useState(0)
@@ -54,7 +54,7 @@ export const HomePage = () => {
 	return (
 		<Stack
 			sx={{
-				backgroundImage: `url('/images/tilefrenzy.PNG')`,
+				backgroundImage: `url('/aim-blitz/images/tilefrenzy.PNG')`,
 				backgroundSize: "cover",
 				backgroundRepeat: "no-repeat",
 				display: "flex",
@@ -105,7 +105,7 @@ export const HomePage = () => {
 						size="large"
 						sx={{ marginY: 1, paddingY: 1 }}
 						component={Link}
-						to="/scenarios"
+						to="/aim-blitz/scenarios"
 					>
 						Start Training
 					</Button>
@@ -190,7 +190,7 @@ export const HomePage = () => {
 										// 16:9
 										pt: "56.25%",
 									}}
-									image={`/images/analytics-${theme.palette.mode}.gif`}
+									image={`/aim-blitz/images/analytics-${theme.palette.mode}.gif`}
 								/>
 								<CardContent>
 									<Typography variant="h4" marginY={1} paddingY={1}>

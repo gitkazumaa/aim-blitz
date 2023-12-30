@@ -17,16 +17,16 @@ import { OneWallFiveTargetsPage } from "@/features/1-wall-5-targets"
 
 const router = createBrowserRouter([
 	{
-		path: "/",
+		path: "/aim-blitz",
 		element: <WithSideBar />,
 		children: [
 			{
-				path: "/",
+				path: "/aim-blitz",
 				index: true,
 				element: <HomePage />,
 			},
 			{
-				path: "/create-account",
+				path: "/aim-blitz/create-account",
 				loader: async () => {
 					const getAccountResponse = await getAccount()
 
@@ -38,10 +38,10 @@ const router = createBrowserRouter([
 				},
 				element: <CreateAccountPage />,
 			},
-			{ path: "/scenarios", element: <ScenariosPage /> },
-			{ path: "/settings", element: <SettingsPage /> },
+			{ path: "/aim-blitz/scenarios", element: <ScenariosPage /> },
+			{ path: "/aim-blitz/settings", element: <SettingsPage /> },
 			{
-				path: "/sign-in",
+				path: "/aim-blitz/sign-in",
 				loader: async () => {
 					const getAccountResponse = await getAccount()
 
@@ -54,7 +54,7 @@ const router = createBrowserRouter([
 				element: <SignInPage />,
 			},
 			{
-				path: "/accounts/:accountId",
+				path: "/aim-blitz/accounts/:accountId",
 				loader: async ({ params }) => {
 					if (params.accountId) {
 						const getAccountByIdResponse = await getAccountById({
@@ -77,7 +77,7 @@ const router = createBrowserRouter([
 				element: <AccountPage />,
 			},
 			{
-				path: "/accounts/:accountId/edit",
+				path: "/aim-blitz/accounts/:accountId/edit",
 				loader: async ({ params }) => {
 					if (params.accountId) {
 						const getAccountResponse = await getAccount()
@@ -95,25 +95,17 @@ const router = createBrowserRouter([
 		],
 	},
 	{
-		path: "/scenarios",
+		path: "/aim-blitz/scenarios",
 		children: [
 			{
-				path: "/scenarios/tile-frenzy",
+				path: "/aim-blitz/scenarios/tile-frenzy",
 				element: <TileFrenzyPage />,
 			},
 			{
-				path: "/scenarios/1-wall-5-targets",
+				path: "/aim-blitz/scenarios/1-wall-5-targets",
 				element: <OneWallFiveTargetsPage />,
 			},
-			{
-				path: "/scenarios/*",
-				loader: () => redirect("/scenarios"),
-			},
 		],
-	},
-	{
-		path: "*",
-		loader: () => redirect("/"),
 	},
 ])
 

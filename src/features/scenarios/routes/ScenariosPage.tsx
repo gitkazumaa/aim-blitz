@@ -53,8 +53,8 @@ export const ScenariosPage = () => {
 							<img
 								src={
 									isHovered[0]
-										? `/images/tilefrenzy-${theme.palette.mode}.gif`
-										: `/images/tilefrenzy-${theme.palette.mode}.PNG`
+										? `/aim-blitz/images/tilefrenzy-${theme.palette.mode}.gif`
+										: `/aim-blitz/images/tilefrenzy-${theme.palette.mode}.PNG`
 								}
 								alt="Tile Frenzy"
 								style={{ width: "100%", height: "100%", objectFit: "cover" }}
@@ -70,7 +70,11 @@ export const ScenariosPage = () => {
 							</Typography>
 						</CardContent>
 						<CardActions>
-							<Button size="small" component={Link} to="/scenarios/tile-frenzy">
+							<Button
+								size="small"
+								component={Link}
+								to="/aim-blitz/scenarios/tile-frenzy"
+							>
 								Play
 							</Button>
 						</CardActions>
@@ -95,8 +99,8 @@ export const ScenariosPage = () => {
 							<img
 								src={
 									isHovered[1]
-										? `/images/1wall5targets-${theme.palette.mode}.gif`
-										: `/images/1wall5targets-${theme.palette.mode}.PNG`
+										? `/aim-blitz/images/1wall5targets-${theme.palette.mode}.gif`
+										: `/aim-blitz/images/1wall5targets-${theme.palette.mode}.PNG`
 								}
 								alt="1 wall 5 targets"
 								style={{ width: "100%", height: "100%", objectFit: "cover" }}
@@ -115,7 +119,7 @@ export const ScenariosPage = () => {
 							<Button
 								size="small"
 								component={Link}
-								to="/scenarios/1-wall-5-targets"
+								to="/aim-blitz/scenarios/1-wall-5-targets"
 							>
 								Play
 							</Button>
