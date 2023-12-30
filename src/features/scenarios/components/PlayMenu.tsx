@@ -142,7 +142,7 @@ export const PlayMenu = () => {
 								variant="contained"
 								fullWidth
 								component={Link}
-								to="/scenarios"
+								to="/aim-blitz/scenarios"
 							>
 								Quit
 							</Button>

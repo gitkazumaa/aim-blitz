@@ -164,7 +164,7 @@ export const HomePage = () => {
 									</Typography>
 								</CardContent>
 								<CardActions>
-									<Button component={Link} to="/scenarios">
+									<Button component={Link} to="/aim-blitz/scenarios">
 										Learn More
 									</Button>
 								</CardActions>
@@ -202,7 +202,7 @@ export const HomePage = () => {
 									</Typography>
 								</CardContent>
 								<CardActions>
-									<Button component={Link} to="/scenarios">
+									<Button component={Link} to="/aim-blitz/scenarios">
 										Learn More
 									</Button>
 								</CardActions>
@@ -261,7 +261,7 @@ export const HomePage = () => {
 									</Typography>
 								</CardContent>
 								<CardActions>
-									<Button component={Link} to="/settings">
+									<Button component={Link} to="/aim-blitz/settings">
 										Learn More
 									</Button>
 								</CardActions>

@@ -89,7 +89,7 @@ export const SignInForm = () => {
 					</Button>
 					<Grid container justifyContent={"end"}>
 						<Grid item>
-							<Link href="/create-account" variant="body2">
+							<Link href="/aim-blitz/create-account" variant="body2">
 								Create Account
 							</Link>
 						</Grid>

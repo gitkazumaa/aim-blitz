@@ -70,7 +70,7 @@ const router = createBrowserRouter([
 								recentScores: getScoresByIdResponse?.data?.scores,
 							}
 						} else {
-							return redirect("/")
+							return redirect("/aim-blitz")
 						}
 					}
 				},
@@ -92,6 +92,12 @@ const router = createBrowserRouter([
 				},
 				element: <AccountEditPage />,
 			},
+			{
+				path: "/aim-blitz/*",
+				loader: () => {
+					return redirect("/aim-blitz")
+				},
+			},
 		],
 	},
 	{
@@ -104,6 +110,12 @@ const router = createBrowserRouter([
 			{
 				path: "/aim-blitz/scenarios/1-wall-5-targets",
 				element: <OneWallFiveTargetsPage />,
+			},
+			{
+				path: "/aim-blitz/scenarios/*",
+				loader: () => {
+					return redirect("/aim-blitz/scenarios")
+				},
 			},
 		],
 	},
