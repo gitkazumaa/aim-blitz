@@ -16,7 +16,7 @@ export const postScore = async ({
 }: PostScoreParameters): Promise<ApiResponse<{ score: Score }>> => {
 	try {
 		const response = await axios.post(
-			`/api/accounts/scenarios/${scenarioName}/scores`,
+			`https://aim-blitz-server.onrender.com/api/accounts/scenarios/${scenarioName}/scores`,
 			{
 				score,
 				accuracy,

@@ -14,7 +14,7 @@ export const getLeaderboard = async ({
 > => {
 	try {
 		const response = await axios.get(
-			`/api/scenarios/${scenarioName}/leaderboard`
+			`https://aim-blitz-server.onrender.com/api/scenarios/${scenarioName}/leaderboard`
 		)
 
 		return response.data

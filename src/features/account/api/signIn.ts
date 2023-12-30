@@ -8,10 +8,13 @@ export const signIn = async (
 	username: string
 ): Promise<ApiResponse<{ account: Account }>> => {
 	try {
-		const response = await axios.post("/api/accounts/sign-in", {
-			password: password,
-			username: username,
-		})
+		const response = await axios.post(
+			"https://aim-blitz-server.onrender.com/api/accounts/sign-in",
+			{
+				password: password,
+				username: username,
+			}
+		)
 
 		return response.data
 	} catch (error) {

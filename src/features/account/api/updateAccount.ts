@@ -23,11 +23,15 @@ export const updateAccount = async ({
 			formData.append("image", image)
 		}
 
-		const response = await axios.put("/api/accounts/edit", formData, {
-			headers: {
-				"Content-Type": "multipart/form-data",
-			},
-		})
+		const response = await axios.put(
+			"https://aim-blitz-server.onrender.com/api/accounts/edit",
+			formData,
+			{
+				headers: {
+					"Content-Type": "multipart/form-data",
+				},
+			}
+		)
 
 		return response.data
 	} catch (error) {

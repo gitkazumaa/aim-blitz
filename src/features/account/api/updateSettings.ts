@@ -11,7 +11,10 @@ export const updateSettings = async ({
 	settings,
 }: UpdateSettingsParameters): Promise<ApiResponse<{ settings: Settings }>> => {
 	try {
-		const response = await axios.put("/api/accounts/settings", { settings })
+		const response = await axios.put(
+			"https://aim-blitz-server.onrender.com/api/accounts/settings",
+			{ settings }
+		)
 
 		return response.data
 	} catch (error) {

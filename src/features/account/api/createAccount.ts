@@ -8,10 +8,13 @@ export const createAccount = async (
 	username: string
 ): Promise<ApiResponse<{ account: Account }>> => {
 	try {
-		const response = await axios.post("/api/accounts/create-account", {
-			password: password,
-			username: username,
-		})
+		const response = await axios.post(
+			"https://aim-blitz-server.onrender.com/api/accounts/create-account",
+			{
+				password: password,
+				username: username,
+			}
+		)
 
 		return response.data
 	} catch (error) {
