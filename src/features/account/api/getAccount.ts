@@ -7,7 +7,9 @@ export const getAccount = async (): Promise<
 	ApiResponse<{ account: Account }>
 > => {
 	try {
-		const response = await axios.get("/api/accounts")
+		const response = await axios.get(
+			"https://aim-blitz-server.onrender.com/api/accounts"
+		)
 
 		return response.data
 	} catch (error) {
