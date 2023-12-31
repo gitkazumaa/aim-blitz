@@ -12,7 +12,7 @@ export const getScores = async ({
 }: GetScoresParameters): Promise<ApiResponse<{ scores: Score[] }>> => {
 	try {
 		const response = await axios.get(
-			`https://aim-blitz-server.onrender.com/api/accounts/scenarios/${scenarioName}/scores`
+			`/api/accounts/scenarios/${scenarioName}/scores`
 		)
 
 		return response.data

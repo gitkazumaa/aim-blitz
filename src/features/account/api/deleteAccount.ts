@@ -7,9 +7,7 @@ export const deleteAccount = async (): Promise<
 	ApiResponse<{ account: Account }>
 > => {
 	try {
-		const response = await axios.delete(
-			"https://aim-blitz-server.onrender.com/api/accounts/delete-account"
-		)
+		const response = await axios.delete("/api/accounts/delete-account")
 
 		return response.data
 	} catch (error) {

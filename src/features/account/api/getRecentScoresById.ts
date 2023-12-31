@@ -13,9 +13,7 @@ export const getRecentScoresById = async ({
 	ApiResponse<{ scores: ScoreWithScenario }>
 > => {
 	try {
-		const response = await axios.get(
-			`https://aim-blitz-server.onrender.com/api/accounts/${accountId}/recent-scores`
-		)
+		const response = await axios.get(`/api/accounts/${accountId}/recent-scores`)
 
 		return response.data
 	} catch (error) {

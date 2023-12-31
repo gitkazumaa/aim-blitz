@@ -13,9 +13,7 @@ export const getAccountById = async ({
 	ApiResponse<{ account: PublicAccount }>
 > => {
 	try {
-		const response = await axios.get(
-			`https://aim-blitz-server.onrender.com/api/accounts/${accountId}`
-		)
+		const response = await axios.get(`/api/accounts/${accountId}`)
 
 		return response.data
 	} catch (error) {
