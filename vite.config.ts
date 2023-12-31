@@ -4,7 +4,7 @@ import { resolve } from "path"
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	base: "/",
+	base: "/aim-blitz/",
 	plugins: [react()],
 	resolve: {
 		alias: {
@@ -16,7 +16,7 @@ export default defineConfig({
 			"/api": {
 				target: "https://aim-blitz-server.onrender.com/api",
 				changeOrigin: true,
-				rewrite: path => path.replace(/^\/api/, ""),
+				rewrite: path => path.replace(/^\/api/, "/aim-blitz/api"),
 			},
 		},
 	},
