@@ -5,7 +5,7 @@ import { AxiosError } from "axios"
 
 export const signOut = async (): Promise<ApiResponse<{ account: Account }>> => {
 	try {
-		const response = await axios.delete("/aim-blitz-server/accounts/sign-out")
+		const response = await axios.delete("/api/accounts/sign-out")
 
 		return response.data
 	} catch (error) {
