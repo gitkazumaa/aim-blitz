@@ -8,7 +8,7 @@ export const signIn = async (
 	username: string
 ): Promise<ApiResponse<{ account: Account }>> => {
 	try {
-		const response = await axios.post("/api/accounts/sign-in", {
+		const response = await axios.post("/aim-blitz-server/accounts/sign-in", {
 			password: password,
 			username: username,
 		})

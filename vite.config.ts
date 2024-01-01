@@ -13,10 +13,10 @@ export default defineConfig({
 	},
 	server: {
 		proxy: {
-			"/api": {
+			"/aim-blitz-server": {
 				target: "https://aim-blitz-server.onrender.com/api/",
 				changeOrigin: true,
-				rewrite: path => path.replace(/^\/api/, ""),
+				rewrite: path => path.replace(/^\/aim-blitz-server/, ""),
 			},
 		},
 	},
